@@ -1,0 +1,1 @@
+<a href="videoviewer.php"><img src="img/<?php if(isset($video_name)) echo $video_name?>.png"></img></a>
