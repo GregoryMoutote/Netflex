@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(103, 137, 149);
+}
+
+.videoframe {
+    width: 20%;
+    height: auto;
+    margin: 0% 2% 0% 2%;
+    display: inline-block;
+}
+
+/*
+
+
+ */
