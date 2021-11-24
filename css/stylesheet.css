@@ -56,6 +56,11 @@ body {
     display: inline-block;
 }
 
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .movie-cell {
     position: relative;
     background-color: rgb(103,137,149);
@@ -65,15 +70,12 @@ body {
     width: 15px;
     height: auto;
     display: inline-block;
-    right: 0;
-    position: absolute;
 }
 
 .movie-cell p {
     font-size: 15px;
     display: inline-block;
-    right: 17px;
-    position: absolute;
+    order: 1;
 }
 
 @media (min-width: 500px) {
