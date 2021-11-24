@@ -16,6 +16,16 @@ p, h2, h1 {
 
 h2, h1 {
     font-family: Aremat, serif;
+
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 25px;
+    margin-left: 2.5% ;
 }
 
 body {
@@ -36,4 +46,21 @@ body {
 .video-banner {
     display: flex;
     flex-direction: row;
+}
+
+@media (min-width: 500px) {
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 35px;
+        margin-left: 2.5% ;
+    }
+
+    .video-banner {
+        display: flex;
+        flex-direction: row;
+    }
 }
