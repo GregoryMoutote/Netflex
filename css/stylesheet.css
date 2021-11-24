@@ -58,6 +58,7 @@ body {
 
 .movie-cell {
     position: relative;
+    background-color: rgb(103,137,149);
 }
 
 .star-img {
