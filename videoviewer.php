@@ -1,1 +1,1 @@
-<?php $video_name = "video1"; include ("modules/video.php")?>
+<?php $video_name = isset($_GET['name'])?$_GET['name']:"video1"; include ("modules/video.php")?>
