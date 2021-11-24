@@ -14,12 +14,16 @@
     url("/fonts/aremat font.otf");
 }
 
-p, h2, h1 {
+p, h2, h1, h3 {
     color: white;
 }
 
 h2, h1 {
     font-family: Aremat, serif;
+}
+
+h3 {
+    font-family: "Segoe UI", serif;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -33,6 +37,10 @@ h1 {
 h2 {
     font-size: 25px;
     margin-left: 2.1% ;
+}
+
+h3 {
+    font-size: 15px;
 }
 
 body {
