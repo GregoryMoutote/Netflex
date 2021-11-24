@@ -26,11 +26,11 @@ h2, h1 {
 /*-----EVERY PAGES STYLE APPLICATIONS---------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-h1{
+h1 {
     font-size: 30px;
 }
 
-h2{
+h2 {
     font-size: 25px;
     margin-left: 2.1% ;
 }
@@ -56,15 +56,32 @@ body {
     display: inline-block;
 }
 
+.movie-cell {
+    position: relative;
+}
 
+.star-img {
+    width: 15px;
+    height: auto;
+    display: inline-block;
+    right: 0;
+    position: absolute;
+}
+
+.movie-cell p {
+    font-size: 15px;
+    display: inline-block;
+    right: 17px;
+    position: absolute;
+}
 
 @media (min-width: 500px) {
 
-    h1{
+    h1 {
         font-size: 40px;
     }
 
-    h2{
+    h2 {
         font-size: 35px;
         margin-left: 2.1% ;
     }
@@ -77,9 +94,9 @@ body {
 
 /*-----HEADER---------------------------------------------------------------------------------------------------------*/
 
-header img{
-width: 40%;
-height: 20%;
+header img {
+    width: 40%;
+    height: 20%;
 }
 
 /*-----FOOTER---------------------------------------------------------------------------------------------------------*/
