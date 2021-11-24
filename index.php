@@ -16,18 +16,30 @@
                 <input type="text" placeholder="Search" id="searchbar">
             </form>
         </div>
-        <div class="videoframe">
-            <?php $video_name = "video1"; include ("modules/videolink.php")?>
-        </div>
-        <div class="videoframe">
-            <?php $video_name = "video2"; include ("modules/videolink.php")?>
-        </div>
-        <div class="videoframe">
-            <?php $video_name = "video3"; include ("modules/videolink.php")?>
-        </div>
-        <div class="videoframe">
-            <?php $video_name = "video4"; include ("modules/videolink.php")?>
-        </div>
+        <?php
+        $title = "Recommendations";
+        $video1 = "video1";
+        $video2 = "video2";
+        $video3 = "video3";
+        $video4 = "video1";
+        include ("modules/videobanner.php");
+        ?>
+        <?php
+        $title = "Récents";
+        $video1 = "video1";
+        $video2 = "video2";
+        $video3 = "video3";
+        $video4 = "video1";
+        include ("modules/videobanner.php");
+        ?>
+        <?php
+        $title = "Populaires";
+        $video1 = "video1";
+        $video2 = "video2";
+        $video3 = "video3";
+        $video4 = "video1";
+        include ("modules/videobanner.php");
+        ?>
     </main>
     <?php include ("modules/footer.php")?>
 </body>
