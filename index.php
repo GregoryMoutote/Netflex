@@ -11,7 +11,7 @@
 <body>
     <?php $page_name = "Accueil"; include ("modules/header.php")?>
     <main>
-        <div id="searcharea">
+        <div id="search-area">
             <form action="search.php" method="post">
                 <input type="text" placeholder="Search" id="searchbar">
             </form>
