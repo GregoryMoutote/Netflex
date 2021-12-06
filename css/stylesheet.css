@@ -47,6 +47,19 @@ body {
     background-color: rgb(0,46,54);
 }
 
+#search-area input {
+    background:none;
+    border: 2px solid white;
+    border-radius: 54px;
+    color: white;
+    padding-left: 5px;
+    margin-left: 2.1%;
+}
+
+#search-area input::placeholder {
+    color: white;
+}
+
 .video-picture {
     width: 100%;
     height: auto;
