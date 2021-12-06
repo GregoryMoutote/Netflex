@@ -47,6 +47,10 @@ body {
     background-color: rgb(0,46,54);
 }
 
+header nav {
+    background-color: rgba(90, 128, 187, 0.54);
+}
+
 .video-picture {
     width: 100%;
     height: auto;
