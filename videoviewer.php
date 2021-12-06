@@ -26,10 +26,10 @@
                     echo "Rémy1 parle de sa raison de devenir développeur... rendre réelles ses waifus !";
                     }
                     elseif($video_name=="video2"){
-                    echo "Gregory présente aussi son but en tant que développeur !";
+                        echo "Rémy2 développe ses maléfiques desseins remplis de vengeance après être devenu développeur =O";
                     }
                     else{
-                     echo "Rémy2 développe ses maléfiques desseins remplis de vengeance après être devenu développeur =O";
+                        echo "Gregory présente aussi son but en tant que développeur !";
                     }
                     ?></p>
             </div>

@@ -61,6 +61,7 @@ body {
 
 .video-banner {
     display: inline-block;
+    background-color: rgba(146, 145, 145, 0.80);
 }
 
 .video-container  {
@@ -163,6 +164,10 @@ video {
 .video-desc > div,
 .video-desc > p {
     margin-left: 2.1%;
+}
+
+.video-viewer-wrapper{
+    background-color: rgba(146, 145, 145, 0.80);
 }
 
 @media (min-width: 1000px) {
