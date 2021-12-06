@@ -59,9 +59,18 @@ body {
     display: inline-block;
 }
 
-
 .video-banner {
     display: inline-block;
+}
+
+.video-container  {
+    width: 100%;
+    height: auto;
+}
+
+.video-desc h1 {
+    color: aliceblue;
+    font-size: 15px;
 }
 
 .rating {
@@ -110,7 +119,16 @@ body {
 
 header img {
     width: 40%;
-    height: 20%;
+    height: auto;
+}
+
+@media (min-width: 500px){
+
+    header img {
+        width: 20%;
+        height: auto;
+    }
+
 }
 
 /*-----FOOTER---------------------------------------------------------------------------------------------------------*/
@@ -128,13 +146,30 @@ header img {
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 video {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
 .video-container {
     padding: 1.5%;
     display: inline-block;
+}
+
+.video-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-body header {
+    order: 1;
+}
+
+
+
+@media (min-width: 1000px) {
+    video {
+        width: 50%;
+    }
 }
 
 /*--------------------------------------------------------------------------------------------------------------------*/
