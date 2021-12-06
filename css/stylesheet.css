@@ -166,8 +166,10 @@ video {
 }
 
 @media (min-width: 1000px) {
-    video {
-        width: 50%;
+
+    .video-viewer-wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 }
 
