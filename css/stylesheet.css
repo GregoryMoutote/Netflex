@@ -155,16 +155,15 @@ video {
     display: inline-block;
 }
 
-.video-body {
-    display: flex;
-    flex-direction: column;
+.video-desc > div > p,
+.video-desc > div > img {
+    display: inline-block;
 }
 
-.video-body header {
-    order: 1;
+.video-desc > div,
+.video-desc > p {
+    margin-left: 2.1%;
 }
-
-
 
 @media (min-width: 1000px) {
     video {
