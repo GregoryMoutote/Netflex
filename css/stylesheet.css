@@ -56,8 +56,9 @@ body {
     margin-left: 2.1%;
 }
 
-#search-area input::placeholder {
+input::placeholder {
     color: white;
+    opacity: 0.75;
 }
 
 .video-picture {
