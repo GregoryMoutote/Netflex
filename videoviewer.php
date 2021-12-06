@@ -10,13 +10,14 @@
 </head>
 <body class="video-body">
 <header>
-    <h1><?= isset($_GET['name'])?$_GET['name']:"video1"?></h1>
+    <h1>Netflex</h1>
 </header>
  <main>
         <div class="video-container">
             <?php $video_name = isset($_GET['name'])?$_GET['name']:"video1"; include ("modules/video.php")?>
         </div>
         <div class="video-desc">
+            <h2><?php echo $video_name?></h2>
             <div class="rating">
                 <p><?=rand(0,5);?></p>
                 <img src="/img/star.png" alt="A wonderful star ! (To illustrate ratings)" class="star-img">
