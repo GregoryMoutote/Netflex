@@ -2,6 +2,7 @@ from collections import defaultdict
 
 from surprise import SVD
 from surprise import Dataset
+import csv
 import sys
 print("2")
 def get_top_n(predictions, n=10):
@@ -32,19 +33,22 @@ def get_top_n(predictions, n=10):
 
 
 # First train an SVD algorithm on the movielens dataset.
-data = Dataset.load_builtin('ml-100k')
-trainset = data.build_full_trainset()
-algo = SVD()
-algo.fit(trainset)
+# data = Dataset.load_builtin('ml-100k')
+print("c")
+with open('database/ratings.csv', newline='') as data:
+    print("c")
+    trainset = data.build_full_trainset()
+    algo = SVD()
+    algo.fit(trainset)
 
-# Than predict ratings for all pairs (u, i) that are NOT in the training set.
-testset = trainset.build_anti_testset()
-predictions = algo.test(testset)
+    # Than predict ratings for all pairs (u, i) that are NOT in the training set.
+    testset = trainset.build_anti_testset()
+    predictions = algo.test(testset)
 
-top_n = get_top_n(predictions, n=4)
+    top_n = get_top_n(predictions, n=4)
 
-# Print the recommended items for each user
+    # Print the recommended items for each user
 
-for uid, user_ratings in top_n.items():
-    if uid == sys.argv[1]:
-        print(uid, [iid for (iid, _) in user_ratings])
+    for uid, user_ratings in top_n.items():
+        if uid == sys.argv[1]:
+            print(uid, [iid for (iid, _) in user_ratings])
