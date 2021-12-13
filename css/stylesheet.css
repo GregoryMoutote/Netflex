@@ -31,7 +31,7 @@ h3 {
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 h1 {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 h2 {
@@ -47,13 +47,29 @@ body {
     background-color: rgb(0,46,54);
 }
 
-#search-area input {
+#search-area {
+    width: 50%;
+    height: auto;
     background:none;
+    padding-left: 5px;
+    margin-left: 2.1%;
     border: 2px solid white;
     border-radius: 54px;
     color: white;
-    padding-left: 5px;
-    margin-left: 2.1%;
+}
+
+#search-area input {
+
+    background: none;
+    border: none;
+    outline: none;
+    width: 95%;
+    color:white;
+}
+
+.searchButton{
+
+    size: 50px;
 }
 
 input::placeholder {
@@ -127,6 +143,18 @@ input::placeholder {
         display: flex;
         flex-direction: row;
     }
+
+    #search-area {
+        width: 23%;
+        height: auto;
+        background:none;
+        border: 2px solid white;
+        border-radius: 54px;
+        color: white;
+        padding-left: 5px;
+        margin-left: 2.1%;
+    }
+
 }
 
 /*-----HEADER---------------------------------------------------------------------------------------------------------*/
@@ -134,9 +162,21 @@ input::placeholder {
 header img {
     width: 40%;
     height: auto;
+
 }
 
+
+
 @media (min-width: 500px){
+
+    header h1 {
+        width: 83%;
+        height: auto;
+        margin-top: auto;
+        text-align: center;
+        display: inline-block;
+        font-size:100px;
+    }
 
     header img {
         width: 100%;

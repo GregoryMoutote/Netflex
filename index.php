@@ -14,6 +14,7 @@
         <div id="search-area">
             <form action="search.php" method="post">
                 <input type="text" placeholder="Search" id="searchbar">
+                <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
             </form>
         </div>
         <?php
