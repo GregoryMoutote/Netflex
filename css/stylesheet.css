@@ -48,6 +48,7 @@ body {
 }
 
 #search-area {
+
     width: 50%;
     height: auto;
     background:none;
@@ -69,7 +70,10 @@ body {
 
 .searchButton{
 
-    size: 50px;
+    font-size: 17px;
+    background: none;
+    border: none;
+    color: white;
 }
 
 input::placeholder {
@@ -206,11 +210,13 @@ header img {
 video {
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 .video-container {
     padding: 1.5%;
     display: inline-block;
+
 }
 
 .video-desc > div > p,
@@ -225,6 +231,7 @@ video {
 
 .video-viewer-wrapper{
     background-color: rgba(146, 145, 145, 0.80);
+    border-radius: 40px;
 }
 
 @media (min-width: 1000px) {
