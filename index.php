@@ -1,3 +1,6 @@
+<?php
+include ("include/config.php");
+?>
 <!doctype html>
 <html lang="fr">
 <head>
