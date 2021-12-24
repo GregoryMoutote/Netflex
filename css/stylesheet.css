@@ -14,7 +14,7 @@
     url("/fonts/aremat font.otf");
 }
 
-p, h2, h1, h3, a {
+p, h2, h1, h3, a, label, legend {
     color: white;
 }
 
@@ -22,7 +22,7 @@ h2, h1 {
     font-family: Aremat, serif;
 }
 
-h3, a {
+h3, a, legend, label {
     font-family: "Segoe UI", serif;
 }
 
@@ -48,7 +48,6 @@ body {
 }
 
 #search-area {
-
     width: 50%;
     height: auto;
     background:none;
@@ -276,17 +275,70 @@ video {
 }
 
 /*--------------------------------------------------------------------------------------------------------------------*/
+/*-----LOGIN PAGE STYLE APPLICATION-----------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+@keyframes sliding {
+    from {transform: translateY(-105%) scale(1,1); color: rgba(100, 100, 100, 1);}
+    to {transform: translateY(-215%) ; color: white;}
+}
+
+.textuel:focus ~ label,
+main label::selection,
+.textuel:not(:placeholder-shown) ~ label{
+    animation: sliding 0.5s ease-in-out;
+    color: white;
+    transform: translateY(-215%);
+}
+
+main form fieldset {
+    padding-top: 20px;
+}
+
+.arealabel {
+    color: rgba(100, 100, 100, 1);
+    display: block;
+}
+
+main fieldset label {
+    color: rgba(100, 100, 100, 1);
+    display: inline;
+}
+
+.textuel ~ label {
+    display : block;
+    position: relative;
+    color: rgba(100, 100, 100, 1);
+    transform: translateY(-105%);
+}
+
+.textuel {
+    position: relative;
+    display : block;
+    width: 90%;
+}
+
+#rememberme ~ label {
+    color: white;
+}
+
+@media (min-width: 740px) and (max-width: 991px) {
+
+    .textuel {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .textuel {
+        width: 30%;
+    }
+}
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
+/*--------------------------------------------------------------------------------------------------------------------*/
 
 
 
