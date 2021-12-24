@@ -13,7 +13,7 @@ include ("classes/FormCreator.php");
     <title>Page de connexion</title>
 </head>
 <body>
-    <?php $pagename = "Connexion"; require 'modules/header.php'?>
+    <?php $page_name = "Connexion"; require 'modules/header.php'?>
     <main>
         <?php
         $form = new FormCreator("post", "modules/loginverification.php");

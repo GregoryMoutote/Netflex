@@ -6,7 +6,7 @@
         <?php if(isset($page_name)) echo $page_name?>
     </h1>
     <nav>
-        <a href=<?php
+        <a class="log-button" href=<?php
         if((isset($_SESSION['admin']) && $_SESSION["admin"]) || (isset($_SESSION["pseudo"]))) {
             $link = "modules/logout.php";
         }
