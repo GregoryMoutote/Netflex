@@ -14,7 +14,7 @@
     url("/fonts/aremat font.otf");
 }
 
-p, h2, h1, h3, a, label, legend {
+p, h2, h1, h3, a, label, legend, button {
     color: white;
 }
 
@@ -22,7 +22,7 @@ h2, h1 {
     font-family: Aremat, serif;
 }
 
-h3, a, legend, label {
+h3, a, legend, label, button{
     font-family: "Segoe UI", serif;
 }
 
@@ -182,7 +182,7 @@ header h1 {
 }
 
 .log-button p {
-    border: white 1px solid;
+    border: white 2px solid;
     border-radius: 50px;
 }
 
@@ -278,6 +278,13 @@ video {
 /*-----LOGIN PAGE STYLE APPLICATION-----------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 
+form button, #rememberme {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 3px;
+}
+
 @keyframes sliding {
     from {transform: translateY(-105%) scale(1,1); color: rgba(100, 100, 100, 1);}
     to {transform: translateY(-215%) ; color: white;}
@@ -293,6 +300,7 @@ main label::selection,
 
 main form fieldset {
     padding-top: 20px;
+    padding-left: 8px;
 }
 
 .arealabel {
