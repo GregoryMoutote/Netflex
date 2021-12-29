@@ -23,10 +23,24 @@ include ("include/config.php");
         </div>
         <?php
         $title = "Recommendations";
-        $video1 = "video1";
-        $video2 = "video2";
-        $video3 = "video3";
-        $video4 = "video1";
+        if(isset($_SESSION["id"])) {
+            $item = ($_SESSION["id"] % 944) . "";
+            $videos = exec("js\surprise_tests\Scripts\python.exe js/4recommendations.py \"" . $item . "\"");
+            $video1 = preg_split("/'/", $videos)[1];
+            $video1 = exec("js\surprise_tests\Scripts\python.exe js/movie_title_seeker.py \"" . $video1 . "\"");
+            $video2 = preg_split("/'/", $videos)[3];
+            $video2 = exec("js\surprise_tests\Scripts\python.exe js/movie_title_seeker.py \"" . $video2 . "\"");
+            $video3 = preg_split("/'/", $videos)[5];
+            $video3 = exec("js\surprise_tests\Scripts\python.exe js/movie_title_seeker.py \"" . $video3 . "\"");
+            $video4 = preg_split("/'/", $videos)[7];
+            $video4 = exec("js\surprise_tests\Scripts\python.exe js/movie_title_seeker.py \"" . $video4 . "\"");
+        }
+        else {
+            $video1 = "video1";
+            $video2 = "video2";
+            $video3 = "video3";
+            $video4 = "video1";
+        }
         include ("modules/videobanner.php");
         ?>
         <?php

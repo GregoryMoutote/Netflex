@@ -1,3 +1,6 @@
+<?php
+include("include/config.php")
+?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -22,14 +25,17 @@
                     <img src="/img/star.png" alt="A wonderful star ! (To illustrate ratings)" class="star-img">
                 </div>
                 <h2> Description</h2>
-                <p> <?php if($video_name=="video1"){
+                <p> <?php if ($video_name=="video1") {
                     echo "Rémy1 parle de sa raison de devenir développeur... rendre réelles ses waifus !";
                     }
-                    elseif($video_name=="video2"){
+                    elseif ($video_name=="video2") {
                         echo "Rémy2 développe ses maléfiques desseins remplis de vengeance après être devenu développeur =O";
                     }
-                    else{
+                    elseif ($video_name=="video3") {
                         echo "Gregory présente aussi son but en tant que développeur !";
+                    }
+                    else {
+                        echo "What an awesome movie";
                     }
                     ?></p>
             </div>
