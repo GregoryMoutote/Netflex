@@ -7,7 +7,7 @@
         else echo "black_pixel"?>.png">
     </a>
     <div class="rating">
-        <p><?=rand(0,5);?></p>
+        <p><?=isset($rating)?$rating:rand(0,5);?></p>
         <img src="/img/star.png" alt="A wonderful star ! (To illustrate ratings)" class="star-img">
     </div>
 </section>
