@@ -25,12 +25,19 @@ include ("include/config.php");
             <?php
             if(isset($_GET["searchbar"])) {
                 $videos = exec("js\surprise_tests\Scripts\python.exe js/search.py \"" . $_GET["searchbar"] . "\"");
-                $videos = preg_split("/\|/", $videos);
-                foreach ($videos as $video) {
-                    $rating1 = exec("js\surprise_tests\Scripts\python.exe js/get_rating.py \"" . $video . "\"");
-                    echo '<div class="video-frame">';
-                    if(isset($rating1)) $rating = $rating1; $video_name = $video; include ("modules/videolink.php");
-                    echo '</div>';
+                if($videos != "[]") {
+                    $videos = preg_split("/\|/", $videos);
+                    foreach ($videos as $video) {
+                        $rating1 = exec("js\surprise_tests\Scripts\python.exe js/get_rating.py \"" . $video . "\"");
+                        echo '<div class="video-frame">';
+                        if (isset($rating1)) $rating = $rating1;
+                        $video_name = $video;
+                        include("modules/videolink.php");
+                        echo '</div>';
+                    }
+                }
+                else {
+                    echo "<h2>Aucun résultat</h2>";
                 }
             }
             ?>
