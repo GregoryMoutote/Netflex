@@ -1,6 +1,6 @@
 <div class="category-title">
     <h2>
-        <?= $title?>
+        <?=isset($title)?$title:"Un film"?>
     </h2>
 </div>
 <div class="video-banner">

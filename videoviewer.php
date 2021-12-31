@@ -21,7 +21,9 @@ include("include/config.php")
             <div class="video-desc">
                 <h2><?php echo $video_name?></h2>
                 <div>
-                    <p><?=rand(0,5);?></p>
+                    <p><?=isset($video_name)?$rating1 =
+                            exec("js\surprise_tests\Scripts\python.exe js/get_rating.py \"" .
+                                $video_name . "\""):rand(0,5);?></p>
                     <img src="/img/star.png" alt="A wonderful star ! (To illustrate ratings)" class="star-img">
                 </div>
                 <h2> Description</h2>
